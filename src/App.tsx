@@ -1,7 +1,13 @@
-import './App.css';
+import { Header } from './layout/header';
+import { Main } from './layout/main';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default App;
