@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 import { Menu } from '../../components/menu';
 import { Logo } from '../../components/logo';
+import { FlexWrapper } from '../../components/flexContainer';
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <Logo />
-      <Menu />
+      <FlexWrapper justify="end">
+        {/* <Logo /> */}
+        <Menu />
+      </FlexWrapper>
     </StyledHeader>
   );
 };
@@ -18,5 +21,4 @@ const StyledHeader = styled.header`
   right: 0;
   z-index: 99;
   display: flex;
-  background-color: lightcoral;
 `;
