@@ -9,6 +9,9 @@ export const Heading = ({ children }: HeadingProps) => {
 };
 
 const StyledHeading = styled.h2`
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-size: 40px;
   text-align: center;
+  text-transform: uppercase;
 `;

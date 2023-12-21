@@ -1,4 +1,4 @@
-import iconsSprite from '../../assets/svg/icons-sprite.svg';
+import styled from 'styled-components';
 
 type IconPropsType = {
   width?: string;
@@ -7,12 +7,20 @@ type IconPropsType = {
   fill?: string;
   xmlns?: string;
   iconId: string;
+  color?: string;
 };
 
 export const Icon = ({ width, height, viewBox, fill, xmlns, iconId }: IconPropsType) => {
   return (
-    <svg width={width} height={height} viewBox={viewBox} fill={fill} xmlns={xmlns}>
-      <use xlinkHref={`${iconsSprite}#${iconId}`} />
-    </svg>
+    <SvgWrapper>
+      <svg width={width} height={height} viewBox={viewBox} fill={fill} xmlns={xmlns}>
+        <use xlinkHref={`#${iconId}`} />
+      </svg>
+    </SvgWrapper>
   );
 };
+
+const SvgWrapper = styled.div`
+  svg {
+  }
+`;

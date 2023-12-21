@@ -6,8 +6,8 @@ import { FlexWrapper } from '../../components/flexContainer';
 export const Header = () => {
   return (
     <StyledHeader>
-      <FlexWrapper justify="end">
-        {/* <Logo /> */}
+      <FlexWrapper justify="space-between" align="center">
+        <Logo />
         <Menu />
       </FlexWrapper>
     </StyledHeader>
@@ -20,5 +20,4 @@ const StyledHeader = styled.header`
   position: absolute;
   right: 0;
   z-index: 99;
-  display: flex;
 `;

@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Barlow Semi Condensed', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color:${theme.colors.font}
+        color:${theme.colors.font};
     }
 
     ol, ul {
@@ -43,11 +43,11 @@ export const GlobalStyles = createGlobalStyle`
         padding-top:70px;
     }
 
-    section:nth-of-type(odd) {
+    section:nth-of-type(3) {
         background-color:${theme.colors.primary}
     }
 
-    section:nth-of-type(even) {
+    /* section:nth-of-type(even) {
         background-color:${theme.colors.secondary}
-    }
+    } */
 `;
