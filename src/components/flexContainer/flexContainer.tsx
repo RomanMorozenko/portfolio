@@ -8,6 +8,7 @@ type FlexWrapperProps = {
   align?: string;
   wrap?: string;
   gap?: string;
+  marginTop?: string;
   children: ReactNode;
 };
 
@@ -22,6 +23,7 @@ type StyledContainerProps = {
   align?: string;
   wrap?: string;
   gap?: string;
+  marginTop?: string;
 };
 
 const StyledContainer = styled.div<StyledContainerProps>`
@@ -34,4 +36,5 @@ const StyledContainer = styled.div<StyledContainerProps>`
   align-items: ${(props) => props.align};
   gap: ${(props) => props.gap};
   flex-wrap: ${(props) => props.wrap};
+  margin-top: ${(props) => props.marginTop};
 `;

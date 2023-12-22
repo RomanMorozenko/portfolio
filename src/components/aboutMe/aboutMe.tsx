@@ -6,9 +6,9 @@ export const AboutMe = () => {
   return (
     <StyledArticle>
       <p>
-        I&lsquo;m an enthusiastic web developer with 5+ years of experience building websites and
-        interfaces using React, Redux (RTK, RTK Query), Next JS, TypeScript, JavaScript, HTML & CSS,
-        and SCSS. My strong understanding of web development principles and best practices helps me
+        I&lsquo;m an enthusiastic web developer with 2+ years of experience building web
+        applications using React, Redux (RTK, RTK Query), Next JS, TypeScript, JavaScript, HTML &
+        CSS(Scss). My strong understanding of web development principles and best practices helps me
         deliver high-quality solutions. I&lsquo;m actively learning Node.js, eager to tackle new
         challenges and contribute to innovative work in the front-end development field.
       </p>
@@ -34,7 +34,7 @@ export const AboutMe = () => {
 
 const StyledArticle = styled.article`
   display: flex;
-  margin-top: 20px;
+  margin-top: 50px;
   h3 {
     font-size: 40px;
     font-weight: ${theme.fontWeight.regular};

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Icon } from '../icon';
+import { theme } from '../../styles/theme';
 
 type SkillProps = {
   iconId: string;
@@ -23,4 +24,10 @@ const StyledSkill = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  h3 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: ${theme.fontWeight.semibold};
+  }
 `;

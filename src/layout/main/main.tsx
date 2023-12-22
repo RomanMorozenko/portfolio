@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import { Picture } from '../../components/picture';
 import mainPhoto from '../../assets/images/image-cat.jpeg';
+import network from '../../assets/images/network.jpg';
+import todo from '../../assets/images/todo.jpg';
 import { FlexWrapper } from '../../components/flexContainer';
 import { Heading } from '../../components/heading';
 import { AboutMe } from '../../components/aboutMe';
@@ -40,7 +41,7 @@ export const Main = () => {
               repeat={Infinity}
             />
           </div>
-          <Picture link={mainPhoto} alt={'photo'} width="600" />
+          <img id="userPhoto" src={mainPhoto} alt="user-photo" />
         </FlexWrapper>
       </section>
       <section>
@@ -53,7 +54,7 @@ export const Main = () => {
       <section>
         <FlexWrapper direction="column" justify="center">
           <Heading>my skills</Heading>
-          <FlexWrapper wrap="wrap">
+          <FlexWrapper wrap="wrap" gap="50px" justify="space-between" marginTop="50px">
             <Skill
               iconId="react"
               skillName="React"
@@ -128,14 +129,28 @@ export const Main = () => {
       <section>
         <FlexWrapper direction="column" justify="center">
           <Heading>projects</Heading>
-          <FlexWrapper>
-            <Project title="" description="" />
+          <FlexWrapper marginTop="50px" justify="space-around">
+            <Project
+              title="Social Network"
+              description="React, Redux Toolkit/RTK Query, React Router, Jest, Storybook, Ant Design"
+              imageLink={network}
+            />
+            <Project
+              title="Tasks List App"
+              description="React, React Query, Jest, Storybook, Material UI"
+              imageLink={todo}
+            />
+            <Project
+              title="Social Network"
+              description="React, Redux Toolkit/RTK Query, React Router, Jest, Storybook, Ant Design"
+              imageLink={network}
+            />
           </FlexWrapper>
         </FlexWrapper>
       </section>
 
       <section>
-        <FlexWrapper direction="column" justify="center">
+        <FlexWrapper direction="column" justify="center" marginTop="50px">
           <Heading>let&lsquo;s cooperate</Heading>
         </FlexWrapper>
       </section>
@@ -155,6 +170,12 @@ const MainStyled = styled.main`
   section {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  #userPhoto {
+    border-radius: 50%;
+    z-index: 1;
+    width: 600px;
   }
 
   h1 {
